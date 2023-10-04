@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-olkd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/quay-or-not-to-quay/nbe-e2e-erpk-tenant/integ-app-gpas/hacbs-test-project-olkd@sha256:c27ad9ab1eb7ba461061f45cc44adaa5df182b3a1c97d6d5a4bc9baac00b8389
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
